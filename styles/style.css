@@ -29,6 +29,11 @@ body{
   gap: 40px;
 }
 
+.navigation-list__item a{
+  color: #000;
+  text-decoration: none;
+}
+
 span{
   font-weight: bold;
   margin-right: 60px;
