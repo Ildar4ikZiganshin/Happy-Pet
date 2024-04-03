@@ -29,9 +29,25 @@ body{
   gap: 40px;
 }
 
-.navigation-list__item a{
+.nav__link{
   color: #000;
+  position: relative;
   text-decoration: none;
+}
+
+.nav__link::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+  left: 0;
+  bottom: -0.5rem;
+  transition: width .3s;
+}
+
+.nav__link:hover::after{
+  width: 75%;
 }
 
 span{
