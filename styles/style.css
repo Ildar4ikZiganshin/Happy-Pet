@@ -63,6 +63,122 @@ span{
   border-radius: 50px;
 }
 
+/* SECTION HERO */
+
+.section-hero {
+  background: linear-gradient(45deg,#F4CB38,#F4C938);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-text {
+  font-size: 19px;
+  margin: 80px 0px;
+  line-height: 30px;
+}
+
+.hero-button {
+  border-radius: 50px;
+  width: 265px;
+  height: 67px;
+  background: linear-gradient(45deg, #F52557, #ED1C4E);
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-img {
+  height: 900px;
+  margin-top: -200px;
+  margin-left: -250px;
+}
+
+
+/* WHY WE SECTION */
+
+.why-we {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 170px;
+}
+
+.why-we-title {
+  margin-bottom: 50px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.why-we-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.why-we-items {
+  display: flex;
+  gap: 20px;
+}
+
+/* ROOM OFFER SECTION */
+
+.room-offer {
+  background: linear-gradient(45deg,#F4CB38,#F4C938);
+  height: 525px;
+  display: flex;
+}
+
+/* .room-offer-paws {
+  position: relative;
+  z-index: 0;
+} */
+
+.room-offer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 200px;
+}
+
+.room-offer-title {
+  font-size: 40px;
+}
+
+.room-offer-text {
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.room-offer-link {
+  font-size: 20px;
+  color: #F52456;
+  text-decoration: none;
+}
+
+
+.room-offer-img {
+  
+}
+
+
+
 /* ADDITIONAL SERVICES */
 .additional-services{
   text-align: center;
