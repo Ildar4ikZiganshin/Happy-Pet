@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  background-color: #FBF6ED;
+}
+/* HEADER */
+
+.header{
+  background: linear-gradient(45deg,#F4CB38,#F4C938);
+  padding: 50px;
+}
+
+.navigation-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation-list{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav__link{
+  color: #000;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav__link::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+  left: 0;
+  bottom: -0.5rem;
+  transition: width .3s;
+}
+
+.nav__link:hover::after{
+  width: 75%;
+}
+
+.header-phone{
+  font-weight: bold;
+  margin-right: 60px;
+}
+
+.header-btn{
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+/* MAIN */
+.section-main{
+  font-family: "Playfair", serif;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.section-title{
+  font-size: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pets__filters{
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  column-gap: 5px;
+  margin-bottom: 2rem;
+}
+
+.pets__item{
+  cursor: pointer;
+  color: #a9a9a9;
+  background-color: transparent;
+  padding: 10px 30px;
+  border: 1px solid #a9a9a9;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.active-section{
+  background-color: #F52456;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.pets__cards{
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.pet__card{
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container{
+  width: 280px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-info, .bottom-info{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pets__img{
+  margin-top: 20px;
+  height: 290px;
+}
+
+.pets__name, .pets__description{
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.pets__description{
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.pets__price{
+  color: #32B71D;
+  font-weight: bold;
+}
+/* FOOTER */
+.footer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(45deg,#F4CB38,#F4C938);
+  padding: 50px;
+}
+
+.footer-navigation-wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socials-list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-data{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-data a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.copyright{
+  margin-top: 20px;
+}
