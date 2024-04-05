@@ -137,6 +137,7 @@ body{
 .pets__img{
   margin-top: 20px;
   height: 290px;
+  object-fit: cover;
 }
 
 .pets__name, .pets__description{
