@@ -67,7 +67,7 @@ body{
   /* MAIN SECTION */
 
 .contact-main {
-    background-image: url("img/contact-background.png");
+    background-image: url("../img/contact-background.png");
     height: 847px;
     width: 100%;
     color: #fff;
