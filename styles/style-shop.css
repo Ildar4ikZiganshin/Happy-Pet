@@ -134,10 +134,10 @@ body{
   align-items: center;
 }
 
+
 .pets__img{
-  margin-top: 20px;
   height: 290px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .pets__name, .pets__description{

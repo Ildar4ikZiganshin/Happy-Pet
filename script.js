@@ -17,3 +17,7 @@ function activePet() {
 }
 
 linkPets.forEach(l=> l.addEventListener('click', activePet))
+
+
+// Slider MAIN PAGE
+
