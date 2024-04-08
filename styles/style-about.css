@@ -55,6 +55,10 @@ body{
   width: 75%;
 }
 
+.header-add{
+  cursor: pointer;
+}
+
 span{
   font-weight: bold;
   margin-right: 60px;
