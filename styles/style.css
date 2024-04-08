@@ -100,6 +100,15 @@ span{
   font-size: 17px;
   font-weight: bold;
   color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background: linear-gradient(45deg, #ea0037, #df0034);
 }
 
 .hero-img {
@@ -168,6 +177,9 @@ span{
   margin-bottom: 50px;
   font-size: 35px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .why-we-cards {
@@ -189,6 +201,7 @@ span{
   background: linear-gradient(45deg,#F4CB38,#F4C938);
   height: 525px;
   display: flex;
+  justify-content: center;
 }
 
 /* .room-offer-paws {
@@ -220,12 +233,6 @@ span{
 }
 
 
-.room-offer-img {
-  
-}
-
-
-
 /* ADDITIONAL SERVICES */
 .additional-services{
   text-align: center;
@@ -243,7 +250,9 @@ span{
 .additional-services__cards{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
 }
 
 .additional-services__card{
@@ -322,11 +331,12 @@ span{
 }
 
 .advantages-cards{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
   gap: 60px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -376,12 +386,13 @@ span{
 }
 
 .staff-cards{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
   gap: 60px;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .staff-card{
