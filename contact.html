@@ -3,52 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <link rel="stylesheet" href="styles/style-contact.css">
     <title>HAPPY PET - Pet Store & Pet's Hotel</title>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="navigation-wrapper">
-          <img class="header-logo" src="img/logo.png">
-    
-          <nav class="header-navigation">
+      <div class="navigation-wrapper">
+        <img class="header-logo" src="img/logo.png">
+
+        <!-- Burger Menu -->
+        <div class="burger-menu" id="burger-menu">
+          <i class="ri-menu-line"></i>
+        </div>
+
+        <nav class="header-navigation">
+          <div class="nav-top">
             <ul class="navigation-list">
               <li class="navigation-list__item"><a class="nav__link" href="index.html">Home</a></li>
               <li class="navigation-list__item"><a class="nav__link" href="shop.html">Friends</a></li>
               <li class="navigation-list__item"><a class="nav__link" href="about.html">About Us</a></li>
               <li class="navigation-list__item"><a class="nav__link" href="contact.html">Contact Us</a></li>
             </ul>
-          </nav>
-    
-          <div>
-            <span>+1 437 436-88-99</span>
-            <a class="header-btn" href="shop.html">Get A Friend</a>
+
+            <!-- Close Button -->
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-line"></i>
+            </div>
           </div>
+        </nav>
+
+        <div class="header-add">
+          <span>+1 437 436-88-99</span>
+          <a class="header-btn" href="shop.html">Get A Friend</a>
         </div>
-      </header>
+      </div>
+    </header>
 
       <!-- MAIN SECTION -->
 
       <main class="contact-main">
           <h2 class="contact-title">Already choose new friend?<br>
           Need to book a room for your friend?<br> Contact Us!</h2>
-        
+
         <div class="form-container">
-            <form action="" class="contact__form" id="contact-form">
+          <form action="" class="contact__form" id="contact-form">
             <div class="contact-group">
                 <div class="contact-box">
                   <label for="fname" class="contact-label">Enter Your Full Name:</label>
                   <input type="text" name="user-fname" class="contact-input" id="fname" required placeholder="Full name">
                 </div>
                 <div class="contact-box">
-                <label for="user_email" class="contact-label">Enter Your Email:</label>
-                <input type="text" name="user_email" class="contact-input" id="email" required placeholder="happypet@gmail.com">
+                  <label for="user_email" class="contact-label">Enter Your Email:</label>
+                  <input type="text" name="user_email" class="contact-input" id="email" required placeholder="happypet@gmail.com">
                 </div>
 
                 <div class="contact-box">
-                <label for="phone" class="contact-label">Enter Your Phone:</label>
-                <input type="text" name="phone" class="contact-input" id="phone" required placeholder="+1234567890">
+                  <label for="phone" class="contact-label">Enter Your Phone:</label>
+                  <input type="text" name="phone" class="contact-input" id="phone" required placeholder="+1234567890">
                 </div>
 
                 <div class="contact-box">
@@ -59,13 +73,15 @@
                       <option value="Groom your pet">Groom your pet</option>
                   </select>
                 </div>
+
+                <div class="contact-box contact-textarea">
+                  <label for="option" class="contact-label">Write your message:</label>
+                  <textarea name="message" class="contact-message" placeholder="Write us something"></textarea>
+                </div>
             </div>
-            <div class="contact-box contact-textarea">
-              <label for="option" class="contact-label">Write your message:</label>
-              <textarea name="message" class="contact-message" placeholder="Write us something"></textarea>
-            </div>
+
             <button type="submit" class="contact-button button">→</button>
-            </form>
+          </form>
         </div>
 
       </main>
@@ -74,7 +90,7 @@
       <footer class="footer">
         <div class="footer-navigation-wrapper">
           <img class="footer-logo" src="img/logo.png">
-    
+
           <ul class="socials-list">
             <li class="social-list__link">
               <img src="img/twitter.svg" alt="" class="social-logo">
@@ -96,6 +112,7 @@
           <p class="slogan">Happy Pets - Happy Clients!</p>
         </div>
       </footer>
-    
+      <script src="js/mixitup.min.js"></script>
+      <script src="script.js"></script>
 </body>
 </html>
