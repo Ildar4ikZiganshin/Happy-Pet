@@ -108,6 +108,51 @@ span{
   margin-left: -250px;
 }
 
+.hero-cards-container {
+  position: absolute;
+  margin-top: -550px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 180px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.5);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero-card img {
+  height: 130px;
+  object-fit: cover;
+  text-decoration: none;
+}
+
+.text-card1 {
+  color: #F07530;
+}
+
+.text-card2 {
+  color: #F4CB38;
+}
+
+.text-card3 {
+  color: #55BC31;
+}
+
+.text-card4 {
+  color: #1400FF;
+}
+
 
 /* WHY WE SECTION */
 
@@ -135,6 +180,8 @@ span{
   display: flex;
   gap: 20px;
 }
+
+
 
 /* ROOM OFFER SECTION */
 
