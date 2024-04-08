@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
   <link rel="stylesheet" href="styles/style.css">
   <title>HAPPY PET - Pet Store & Pet's Hotel</title>
 </head>
@@ -13,16 +14,28 @@
     <div class="navigation-wrapper">
       <img class="header-logo" src="img/logo.png">
 
+      <!-- Burger Menu -->
+      <div class="burger-menu" id="burger-menu">
+        <i class="ri-menu-line"></i>
+      </div>
+
       <nav class="header-navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list__item"><a class="nav__link" href="index.html">Home</a></li>
-          <li class="navigation-list__item"><a class="nav__link" href="shop.html">Friends</a></li>
-          <li class="navigation-list__item"><a class="nav__link" href="about.html">About Us</a></li>
-          <li class="navigation-list__item"><a class="nav__link" href="contact.html">Contact Us</a></li>
-        </ul>
+        <div class="nav-top">
+          <ul class="navigation-list">
+            <li class="navigation-list__item"><a class="nav__link" href="index.html">Home</a></li>
+            <li class="navigation-list__item"><a class="nav__link" href="shop.html">Friends</a></li>
+            <li class="navigation-list__item"><a class="nav__link" href="about.html">About Us</a></li>
+            <li class="navigation-list__item"><a class="nav__link" href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <!-- Close Button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
       </nav>
 
-      <div>
+      <div class="header-add">
         <span>+1 437 436-88-99</span>
         <a class="header-btn" href="shop.html">Get A Friend</a>
       </div>
@@ -34,8 +47,8 @@
     <section class="section-hero">
       <div class="hero-information">
         <h1 class="hero-title">Your New Friend with our Delivery from hand to hand</h1>
-        <p class="hero-text">The online pet store will give you a new <br> friend in a few clicks. Take action!</p>
-        <button class="hero-button">Choose a Friend</button>
+        <p class="hero-text">The online pet store will give you a new friend in a few clicks. Take action!</p>
+        <a href="shop.html" class="hero-button">Choose a Friend</a>
       </div>
       <img src="img/hero-section-image.png" alt="Dog and Cat" class="hero-img">
     </section>
@@ -82,7 +95,7 @@
           <img src="img/hamster-hero.png" alt="Hamster">
         </a>
       </div>
- 
+
     </section>
     <section class="room-offer">
       <!-- <img src="img/paw-mask.png" alt="paws" class="room-offer-paws"> -->
@@ -213,6 +226,8 @@
       <p class="slogan">Happy Pets - Happy Clients!</p>
     </div>
   </footer>
+  <script src="js/mixitup.min.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
