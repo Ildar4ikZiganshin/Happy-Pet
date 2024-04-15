@@ -14,7 +14,7 @@ body{
 
 .header{
   background: linear-gradient(45deg,#F4CB38,#F4C938);
-  padding: 50px;
+  padding: 5rem;
   width: 100%;
 }
 
@@ -152,13 +152,13 @@ span{
 }
 
 .hero-cards-container {
-  position: absolute;
-  left: 200px;
-  margin-top: 640px;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 20px;
+  overflow: visible;
+  top: 3rem;
 }
 
 .hero-card {
@@ -205,7 +205,7 @@ span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10rem 1rem;
+  padding: 10rem 8rem;
 }
 
 .why-we-title {
@@ -746,11 +746,6 @@ span{
     display: none;
   }
 
-  .hero-cards-container {
-    left: 160px;
-    margin-top: 610px;
-  }
-
   .hero-card {
     display: flex;
     flex-direction: column;
@@ -856,6 +851,10 @@ span{
     display: none;
   }
 
+  .header-logo img{
+    width: 6rem;
+  }
+
   .burger-menu {
     display: block;
   }
@@ -949,11 +948,13 @@ span{
   }
 
   .hero-cards-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    left: 110px;
-    margin-top: 400px;
-    gap: 10px;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 5rem;
   }
 
 
@@ -1036,8 +1037,9 @@ span{
 }
 
 @media screen and (max-width: 375px) {
-  .hero-cards-container{
-    left: 90px;
+
+  .hero-cards-container {
+    margin: 0 2rem;
   }
 
   .room-offer-info{
@@ -1127,9 +1129,6 @@ span{
     margin-left: 0;
   }
 
-  .hero-cards-container {
-    left: 60px;
-  }
 
   .hero-card {
     display: flex;

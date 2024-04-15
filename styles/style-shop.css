@@ -327,6 +327,10 @@ span{
 
 @media screen and (max-width: 425px) {
 
+  .header-logo img{
+    width: 6rem;
+  }
+
   .section-main {
     padding: 15px;
   }

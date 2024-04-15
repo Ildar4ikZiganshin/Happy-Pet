@@ -356,6 +356,10 @@ span{
     font-size: 1rem;
     width: 25rem;
   }
+  .header-logo img{
+    width: 6rem;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
